@@ -8,8 +8,12 @@ function impactForce() {
     let d = document.getElementById('d-impact').value;
     let F = (m / 2) * (v ** 2) / d;
     let o = Math.round(F);
-    output.innerText = `${o} Newtons of Force`;
-    console.log(F);
+    if (isNaN(o) || !isFinite(o)) {
+        return;
+    } else {
+        output.innerText = `${o} Newtons of Force`;
+        console.log(F);
+    };
 }
 
 //function render() {
