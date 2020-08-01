@@ -1,6 +1,3 @@
-//let F = null;
-
-
 function impactForce() {
     const output = document.querySelector(".impact-output");
     let m = document.getElementById('m-impact').value;
@@ -15,10 +12,6 @@ function impactForce() {
         console.log(F);
     };
 }
-
-//function render() {
-//    output.innerText = F;
-//}
 
 function potentialEnergy() {
     const output = document.querySelector(".potential-output");
