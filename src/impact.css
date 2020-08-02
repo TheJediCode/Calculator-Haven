@@ -41,15 +41,47 @@ header {
 }
 
 .calculator {
-    display: block;
-    float: left;
+    display: flex;
+    
+    flex-wrap: wrap;
     border: 3px solid grey;
     border-radius: 15px 50px;
     padding: 10px;
     padding-left: 15px;
     padding-bottom: 15px;
     width: 28%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    margin-top: 5px;
+    margin: 0 auto;
+}
+
+.navBar {
+    display: block;
+    border: 1px solid black;
+    width: 15%;
+    background-color: #6e7781;
+}
+
+.mainBody {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+}
+
+ul.navMenu {
+    list-style: none;
+    padding: 2%;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #c3d9ef;
+}
+
+a.homeLink {
+    color: black;
+}
+
+.navItems {
+    color: #c3d9ef;
 }
