@@ -12,40 +12,42 @@
             <h1>Welcome to Calculator Haven!</h1>
         </a>
     </header>
-    <div class="navBar">
-        <ul class="navMenu">
-            <li class="navItems">
-                <a href="./pounds.html">Pounds to Kilograms</a>
-            </li>
-             <li class="navItems">
-                <a href="./inches.html">Inches to Meters</a>
-             </li>
-             <li class="navItems">
-                 <a href="./bmi-standard.html">BMI Metric</a>
-             </li>
-             <li class="navItems">
-                 <a href="bmi-imperial.html">BMI Imperial</a>
-             </li>
-             <li class="navItems">
-                 <a href="./impact.html">Impact Force</a>
-             </li>
-             <li class="navItems">
-                 <a href="./potential.html">Impact from Falling</a>
-             </li>
-             <li class="navItems">
-                 <a href="./pressure.html">Pressure</a>
-             </li>
-            <li class="navItems">
-                <a href="./tax.html">Sales Tax</a>
-            </li>
-        </ul>
-    </div>
-    <div class="bmi-standard calculator">
-        <p class="title">Body Mass Index (BMI) Calculator for Metric</p>
-        <input type="text" id="m-body" class="field" oninput="bmiStandard()">Mass (kg)<br>
-        <input type="text" id="h-body-meters" class="field" oninput="bmiStandard()">Height (m)<br>
-        <!-- <button onclick="bmiStandard()">Result</button> -->
-        <div class="bmi-output-standard output"></div>
+    <div class="mainBody">
+        <div class="navBar">
+            <ul class="navMenu">
+                <li class="navItems">
+                    <a href="./pounds.html"><h3 class="link">Pounds to Kilograms</h3></a>
+                </li>
+                <li class="navItems" >
+                    <a href="./inches.html"><h3 class="link">Inches to Meters</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./bmi-standard.html"><h3 class="link">BMI Metric</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="bmi-imperial.html"><h3 class="link">BMI Imperial</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./impact.html"><h3 class="link">Impact Force</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./potential.html"><h3 class="link">Impact from Falling</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./pressure.html"><h3 class="link">Pressure</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./tax.html"><h3 class="link">Sales Tax</h3></a>
+                </li>
+            </ul>
+        </div>
+        <div class="bmi-standard calculator">
+            <p class="title">Body Mass Index (BMI) Calculator for Metric</p>
+            <input type="text" id="m-body" class="field" oninput="bmiStandard()">Mass (kg)<br>
+            <input type="text" id="h-body-meters" class="field" oninput="bmiStandard()">Height (m)<br>
+            <!-- <button onclick="bmiStandard()">Result</button> -->
+            <div class="bmi-output-standard output"></div>
+        </div>
     </div>
     <script src=".\impact.js"></script>
 </body>
