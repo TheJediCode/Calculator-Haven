@@ -27,7 +27,7 @@
 
 .calculatorApp {
   margin: 0 auto;
-  margin-left: 18.5%;
+  
   width: 400px;
   height: 75%;
 }
@@ -36,11 +36,14 @@
   justify-content: center;
   width: 400px;
   height: 80px;
+  /*overflow: hidden;*/
   background-color: black;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   text-align: right;
   padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 .button-row {
