@@ -18,6 +18,8 @@ html, body {
 
 body {
     background-color: black;
+    background-image: url(./fractal.jpg);
+    background-size: cover;
 }
 
 header {
@@ -35,6 +37,7 @@ header {
     background: -o-linear-gradient(right, rgb(5, 127, 241) , rgb(6, 114, 255), rgb(4, 0, 211), rgb(76, 0, 255), rgb(185, 5, 230), violet);
     background: -moz-linear-gradient(right, rgb(5, 127, 241) , rgb(6, 114, 255), rgb(4, 0, 211), rgb(76, 0, 255), rgb(185, 5, 230), violet);
     background: linear-gradient(to right, rgb(5, 127, 241) , rgb(6, 114, 255), rgb(4, 0, 211), rgb(76, 0, 255), rgb(185, 5, 230), violet);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Monoton;
@@ -54,7 +57,8 @@ header {
     margin-bottom: 10px;
     margin-right: 10px;
     width: 60%;
-    
+    background-color: black;
+    color: white;
     /*color: lightskyblue;*/
 }
 
@@ -65,21 +69,22 @@ header {
 .output {
     border: 2px solid gray;
     height: 50px;
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    margin-left: 10px;
     font-size: 15px;
-
 }
 
 .calculator {
     /*display: flex;
     
     flex-wrap: wrap;*/
-    background-color: white;
-    border: 3px solid grey;
+    color: white;
+    background-color: black;
+    border: 3px solid purple;
     border-radius: 15px 50px;
     padding: 10px;
     padding-left: 15px;
@@ -97,8 +102,6 @@ header {
 }
 
 .mainBody {
-    background-image: url(./fractal.jpg);
-    background-size: cover;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -130,7 +133,7 @@ a.homeLink {
 
 .navItems {
     overflow: hidden;
-    background-image: radial-gradient(circle, red, brown, black);
+    background-image: radial-gradient(circle, lightskyblue, blue, black);
     color: #c3d9ef;
     /*height: 100px; */
     border-radius: 50%;
@@ -152,9 +155,8 @@ a.homeLink {
 
 h3.link {
    padding-top: 1vw;
-   font-family: "Permanent Marker";
-   
-   
+   font-family: Copperplate, "Copperplate Gothic Light";
+   color: black;   
 }
 
 /*h3.link:hover {
