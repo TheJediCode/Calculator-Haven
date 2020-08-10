@@ -109,3 +109,17 @@ function pressure() {
         console.log(p);
     };
 }
+
+function triangleArea() {
+    const output = document.querySelector(".triangle-output");
+    let b = document.getElementById("b-triangle");
+    let h = document.getElementById("h-triangle");
+    let a = 0.5 * b * h;
+    let A = Math.round((a + Number.EPSILON) * 100) / 100;
+    if (isNaN(A) || !isFinite(A)) {
+        return;
+    } else {
+        output.innerText = `${A} units`;
+        console.log(a);
+    }
+}
