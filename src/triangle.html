@@ -43,49 +43,15 @@
                 <li class="navItems">
                     <a href="./tax.html"><h3 class="link">Sales Tax</h3></a>
                 </li>
-                <li class="navItems">
-                    <a href="./triangle.html"><h3 class="link">Triangle Area</h3></a>
-                </li>
             </ul>
         </div>
-        <div class="calculatorApp">
-            <section class="screen">
-            0
-            </section>
-            <section class="calc-buttons">
-            <div class="backspace-buttons button-row">
-                <button class="clear-all calc-button">C</button>
-                <button class="calc-button"><</button>
-                <button class="calc-button">/</button>
-            </div>
-            <div class="button-row">
-                <button class="calc-button">7</button>
-                <button class="calc-button">8</button>
-                <button class="calc-button">9</button>
-                <button class="calc-button">X</button>
-            </div>
-            <div class="button-row">
-                <button class="calc-button">4</button>
-                <button class="calc-button">5</button>
-                <button class="calc-button">6</button>
-                <button class="calc-button">-</button>
-            </div>
-            <div class="button-row">
-                <button class="calc-button">1</button>
-                <button class="calc-button">2</button>
-                <button class="calc-button">3</button>
-                <button class="calc-button">+</button>
-            </div>
-            <div class="button-row">
-                <button class="zero calc-button">0</button>
-                <button class="calc-button">.</button>
-                <button class="calc-button">=</button>
-            </div>
-            </section>
+        <div class="triangle calculator">
+            <p class="title">Area of a Triangle</p>
+            <input type="text" id="b-triangle" class="field" oninput="triangleArea()">Base<br>
+            <input type="text" id="h-triangle" class="field" oninput="triangleArea()">Height<br>
+            <div class="triangle-output output"></div>
         </div>
     </div>
     <script src="./impact.js"></script>
-    <script src="./calculator.js"></script>
-    <!--<script src=".\potential.js"></script>-->
 </body>
 </html>
