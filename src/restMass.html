@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Haven</title>
+    <link rel="stylesheet" href="impact.css">
+    <link rel="stylesheet" href="./calculator2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+</head>
+<body>
+    <header class="main-title">
+        <a href="./index.html" class="homeLink">
+            <img src="./cube.jpg" alt="math background" width="100%" height="200px" class="mathGround">
+                <div class="titleLink"><h1>CALCULATOR HAVEN</h1></div>
+        </a>
+    </header>
+    <div class="mainBody">
+        <div class="navBar">
+            <ul class="navMenu">
+                <li class="navItems">
+                    <a href="./pounds.html"><h3 class="link">lb => kg</h3></a>
+                </li>
+                <li class="navItems" >
+                    <a href="./inches.html"><h3 class="link">in => m</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./bmi-standard.html"><h3 class="link">BMI Metric</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="bmi-imperial.html"><h3 class="link">BMI Imperial</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./impact.html"><h3 class="link">Impact Force</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./potential.html"><h3 class="link">Fall Impact</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./pressure.html"><h3 class="link">Pressure</h3></a>
+                </li>
+                <li class="navItems">
+                    <a href="./tax.html"><h3 class="link">Sales Tax</h3></a>
+                </li>
+            </ul>
+        </div>
+        <div class="restMass calculator">
+            <p class="title">Rest Mass</p>
+            <input type="text" id="m-restMass" class="field" oninput="restMass()">Mass (kg)<br>
+            <div class="restMass-output output"></div>
+        </div>
+    </div>
+    <script src="./impact.js"></script>
+</body>
+</html>

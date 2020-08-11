@@ -123,3 +123,45 @@ function triangleArea() {
         console.log(a);
     }
 }
+
+function restMass() {
+    const output = document.querySelector(".restMass-output");
+    let m = document.getElementById("m-restMass").value;
+    let c = 299792458;
+    let e = m * (c ** 2);
+    let E = Math.ceil(e);
+    if (isNaN(E) || !isFinite(E)) {
+        return;
+    } else {
+        output.innerText = `${E} Joules`;
+        console.log(E);
+    }
+}
+
+
+function gamma() {
+    const output = document.querySelector(".gamma-output");
+    let v0 = document.getElementById("v-gamma").value;
+    let c = 299792458;
+    let v = v0 * c;
+    let γ = (1) / (Math.sqrt(1 - (v ** 2)/(c ** 2)));
+    if (isNaN(γ) || !isFinite(γ)) {
+        return;
+    } else {
+        output.innerText = `${γ}`;
+        console.log(γ);
+    }
+}
+
+function timeDilation() {
+    const output = document.querySelector(".time-output");
+    let t0 = document.getElementById("t0-time").value;
+    let γ = document.getElementById("γ-time").value;
+    let t = γ * t0;
+    if (isNaN(t) || !isFinite(t)) {
+        return;
+    } else {
+        output.innerText = `${t} seconds`;
+        console.log(t);
+    }
+} 
