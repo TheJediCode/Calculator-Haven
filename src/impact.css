@@ -159,6 +159,9 @@ h3.link {
    color: black;   
 }
 
-/*h3.link:hover {
-    
-}*/
+sup {
+    font-size: 0.6em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
