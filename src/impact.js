@@ -129,12 +129,11 @@ function restMass() {
     let m = document.getElementById("m-restMass").value;
     let c = 299792458;
     let e = m * (c ** 2);
-    let s = parseInt(Math.round(e).toString().substr(0, 2));
-    let p = Math.round((s)/10)*10;
+    let s = Math.round((parseInt(Math.round(e).toString().substr(0, 2))/10))*10;
     if (isNaN(e) || !isFinite(e)) {
         return;
     } else {
-        output.innerHTML = `${p.toString()[0]} x10<sup>${Math.round(e).toString().length - 1}</sup>  Joules`;
+        output.innerHTML = `${s.toString()[0]} x10<sup>${Math.round(e).toString().length - 1}</sup>  Joules`;
         console.log(e);
         console.log(p);
         console.log(s);
