@@ -3,12 +3,12 @@ function impactForce() {
     let m = document.getElementById('m-impact').value;
     let v = document.getElementById('v-impact').value;
     let d = document.getElementById('d-impact').value;
-    let F = (m / 2) * (v ** 2) / d;
-    let o = Math.round((F + Number.EPSILON) * 100) / 100;
-    if (isNaN(o) || !isFinite(o)) {
+    let F = Math.round((((m / 2) * (v ** 2) / d) + Number.EPSILON) * 100) / 100;
+    //let o = Math.round((F + Number.EPSILON) * 100) / 100;
+    if (isNaN(F) || !isFinite(F)) {
         return;
     } else {
-        output.innerText = `${o} Newtons of Force`;
+        output.innerText = `${F} Newtons of Force`;
         console.log(F);
     };
 }
